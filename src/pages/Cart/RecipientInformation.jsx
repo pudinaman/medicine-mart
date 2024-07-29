@@ -29,7 +29,7 @@ const RecipientInformation = () => {
 
   const fetchBillingInfo = async (userId) => {
     try {
-      const response = await fetch(`http://localhost:4000/billing/${userId}`, {
+      const response = await fetch(`https://wayuapi.wayumart.com/billing/${userId}`, {
         headers: {
           'x-access-token': localStorage.getItem('auth-token')
         }
@@ -91,7 +91,7 @@ const RecipientInformation = () => {
   const handleCreate = async () => {
     try {
       const token = localStorage.getItem('auth-token');
-      const response = await fetch('http://localhost:4000/billing', {
+      const response = await fetch('https://wayuapi.wayumart.com/billing', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -133,7 +133,7 @@ const RecipientInformation = () => {
   const handleUpdate = async () => {
     try {
       const token = localStorage.getItem('auth-token');
-      const response = await fetch(`http://localhost:4000/billing/${localStorage.getItem('userId')}`, {
+      const response = await fetch(`https://wayuapi.wayumart.com/billing/${localStorage.getItem('userId')}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

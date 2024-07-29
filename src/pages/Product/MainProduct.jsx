@@ -71,7 +71,7 @@ const MainProduct = ({ product }) => {
       const selectedSizeObject = product.size.find(size => size._id === selectedSize);
       const currentPrice = selectedSizeObject ? calculateDiscountedPrice(selectedSizeObject.price) : product.price;
 
-      const response = await fetch(`http://localhost:4000/cart`, {
+      const response = await fetch(`https://wayuapi.wayumart.com/cart`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

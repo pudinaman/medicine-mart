@@ -3,6 +3,7 @@ import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, se
 import { auth, googleProvider } from '../firebase';
 import './CSS/LoginSignup.css';
 import hero2 from '../assets/hero2.png';
+import pdf from '../assets/website_terms_and_conditions.pdf'
 
 const LoginSignup = () => {
   const [state, setState] = useState("Login");
@@ -23,7 +24,7 @@ const LoginSignup = () => {
 
   const saveUserToBackend = async (firebaseUid) => {
     try {
-      const response = await fetch('http://localhost:4000/authenticate', {
+      const response = await fetch('https://wayuapi.wayumart.com/authenticate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -100,6 +101,9 @@ const LoginSignup = () => {
       console.error('Logout failed:', error);
     }
   };
+  const openPdf = (pdfUrl) => {
+    window.open(pdfUrl, '_blank');
+  };
 
   return (
     <div className='loginsignup'>
@@ -134,7 +138,7 @@ const LoginSignup = () => {
           </div>
           <p className='loginsignup-switch'>Already have an account? <span onClick={() => setState("Login")}>Log in</span></p>
           <p className='loginsignup-terms'>
-            By continuing you agree to our <a href='../assests/website_terms_and_conditions.pdf'>Terms & Conditions</a> and <a href='#'>Privacy Policy</a>.
+            By continuing you agree to our <a href={pdf}>Terms & Conditions</a> and <a href='#'>Privacy Policy</a>.
           </p>
         </div>
       ) : state === "SignUpWithEmail" ? (
@@ -147,7 +151,7 @@ const LoginSignup = () => {
             <button onClick={signup} className='continue2-button'>Continue</button>
           </div>
           <p className='loginsignup-terms'>
-            By continuing you agree to our <a href='#'>Terms & Conditions</a> and <a href='#'>Privacy Policy</a>.
+            By continuing you agree to our <a  onClick={() => openPdf(pdf)}href='#'>Terms & Conditions</a> and <a href='#'>Privacy Policy</a>.
           </p>
           <p className='loginsignup-switch'>Already have an account? <span onClick={() => setState("Login")}>Log in</span></p>
         </div>

@@ -24,7 +24,7 @@ export const CheckoutOrder = () => {
   useEffect(() => {
     const fetchOrder = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/orders/${userId}/${orderId}`);
+        const response = await fetch(`https://wayuapi.wayumart.com/orders/${userId}/${orderId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch order');
         }

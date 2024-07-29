@@ -15,7 +15,7 @@ const RelatedProducts = ({ category }) => {
     const fetchRelatedProducts = async () => {
       try {
         // Replace with actual API call to fetch related products based on category
-        const response = await fetch(`http://localhost:4000/products/similar/${category}`);
+        const response = await fetch(`https://wayuapi.wayumart.com/products/similar/${category}`);
         if (response.ok) {
           const data = await response.json();
           setProducts(data); // Assuming data is the array of products
@@ -45,7 +45,7 @@ const RelatedProducts = ({ category }) => {
       }
 
       // Example of a POST request to add product to cart
-      const response = await fetch(`http://localhost:4000/cart`, {
+      const response = await fetch(`https://wayuapi.wayumart.com/cart`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

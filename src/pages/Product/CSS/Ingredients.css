@@ -1,0 +1,63 @@
+.ingredients-container {
+    font-family: Arial, sans-serif; /* Replace with the font used in your image */
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .ingredients-container h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-right:960px;
+    color:#323743
+  }
+  
+  .ingredient-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ingredient {
+    width: 30%;
+    margin: 0 10px;
+  }
+  
+  .ingredient img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adjust as needed */
+  }
+  
+  .ingredient h3 {
+    font-size: 1.5em;
+    color: #333; /* Replace with the exact color from your image */
+    margin-top: 20px;
+  }
+  
+  .ingredient p {
+    font-size: 1em;
+    color: #666; /* Replace with the exact color from your image */
+    line-height: 1.4;
+  }
+  
+  .see-full-list {
+    background-color: white; 
+  color: #6D31Ed; 
+  border: 1px solid #6D31Ed; 
+  padding: 5px 20px;
+  border-radius: 4px; 
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  width: 200px;
+  height: 36px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: "Manrope",sans-serif;
+  
+  transition: background-color 0.3s ease;
+  }
+  
+  
+  

@@ -1,0 +1,189 @@
+.loginsignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.loginsignup-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.loginsignup h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-size: 32px;
+  text-align: left;
+  font-family: "Lexend",sans-serif;
+  color:#171A1F
+}
+
+.loginsignup-subtitle {
+  font-size: 14px;
+  color: #9095A1;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-family: "Lexend",sans-serif;
+  font-size: 14px;
+}
+
+.loginsignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.loginsignup-fields input {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #F3F4F6;
+  font-family: "Manrope",sans-serif;
+  color: #BDC1CA;
+}
+
+.oauth-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.email {
+  background-color: #6D31ed;
+  border: 0px;
+  border-radius: 8px;
+  color: white;
+}
+
+.google {
+  background-color: white;
+  color: #db4437;
+  border: 1px solid #db4437;
+}
+
+.facebook {
+  border:1px solid #4267b2;
+  color: #4267b2;
+  background-color: #ffffff;
+}
+
+.apple {
+  border:1px solid #171A1F;
+  color: #171A1F;
+  background-color: #ffffff;
+}
+
+.oauth-button:hover {
+  opacity: 0.9;
+}
+
+.loginsignup-remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.loginsignup-remember input {
+  margin-right: 5px;
+}
+
+.loginsignup-remember label {
+  font-size: 14px;
+  margin-right: 160px;
+  font-family: "Manrope",sans-serif;
+  color: #171A1F;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #6D31ed;
+  text-decoration: none;
+  font-family: "Manrope",sans-serif;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.loginsignup button {
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+.loginsignup-switch {
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: "Manrope",sans-serif;
+  color: #171A1F;
+}
+
+.loginsignup-switch span {
+  color: #6D31ed;
+  cursor: pointer;
+}
+
+.loginsignup-switch span:hover {
+  text-decoration: underline;
+}
+
+.loginsignup-terms {
+  font-size: 12px;
+  color: #888;
+  margin-top: 20px;
+}
+.oauth-button-email{
+    border:1px solid #6D31ed;
+    color: #6D31ed;
+    font-family: "Manrope",sans-serif;
+}
+.oauth-button-google{
+    border:1px solid#db4437 ;
+    color: #db4437;
+    font-family: "Manrope",sans-serif;
+}
+.oauth-button-facebook{
+    border:1px solid #4267b2;
+    color:#4267b2;
+    font-family: "Manrope",sans-serif;
+}
+.oauth-button-apple{
+ border:1px solid #171A1f;
+ color: #171A1f;
+ font-family: "Manrope",sans-serif;
+}
+.left-side img{
+    width: 439px;
+    height: 409px;
+    margin-right: 40px;
+}
+.Continue-button{
+    width: 402px;
+    height: 43px;
+    background-color: #6D31ed;
+    color:#ffffff;
+    border: 0px;
+    border-radius: 8px;
+}
+.continue2-button{
+    background-color: #6D31ed;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 8px;
+}

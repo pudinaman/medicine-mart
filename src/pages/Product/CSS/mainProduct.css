@@ -1,0 +1,256 @@
+.mp-product-detail {
+  padding: 40px;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.mp-breadcrumb {
+  margin-bottom: 20px;
+  margin-left: 128px;
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+}
+
+.mp-breadcrumb a {
+  color: #3a4f7a;
+  text-decoration: none;
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.mp-product-container {
+  display: flex;
+}
+
+.mp-thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mp-thumbnail img {
+  width: 100px;
+  height: 125px;
+  background-color: #f0f0f0;
+  margin-left: 132px;
+}
+
+.mp-product-main {
+  flex: 6;
+  display: flex;
+  gap: 20px;
+}
+
+.mp-product-image {
+  flex: 1;
+  position: relative;
+}
+
+.mp-product-image img {
+  width: 506px;
+  height: 607px;
+  margin-left: 8px;
+}
+
+.mp-product-info {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.mp-best-seller {
+  display: inline-block;
+  background-color: #15abff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  position: absolute;
+  margin-left: -190px;
+  margin-top: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.mp-price {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.new-current-price {
+  color: #3A4F7A;
+  font-size: 40px;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.new-old-price {
+  color: #9095a1;
+  text-decoration: line-through;
+  margin-left: 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.mp-reviews {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mp-review-count {
+  font-weight: bold;
+  color: #3A4F7a;
+}
+
+.mp-sold-count {
+  font-weight: bold;
+  color: #3A4F7A;
+}
+
+.mp-stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffd700;
+}
+
+.mp-stars i {
+  color: #ffd700;
+}
+
+.mp-stars .fa-star-half-alt {
+  color: #ffd700;
+}
+
+.mp-features {
+  list-style: none;
+  padding: 0;
+}
+
+.mp-features li {
+  margin: 20px 0;
+  font-family: "Manrope", sans-serif;
+}
+
+.greencheck {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+  margin-bottom: -6px;
+}
+
+.mp-options {
+  margin-top: 20px;
+  color: #424856;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+}
+
+.mp-select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.mp-select-wrapper select {
+  width: 557px;
+  padding: 10px;
+  font-size: 14px;
+  border: 0px solid #ddd;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f3f4f6
+    url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24'><path fill='none' stroke='%23999' stroke-width='2' d='M21 8L12 17 3 8'/></svg>")
+    no-repeat right 10px center;
+  background-size: 10px 10px;
+}
+
+.mp-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mp-quantity label {
+  margin-top: -30px;
+}
+
+.mp-quantity button {
+  background-color: #eee;
+  border: 0px solid #ccc;
+  cursor: pointer;
+  margin-top: 60px;
+  margin-left: -40px;
+}
+
+.mp-quantity input {
+  text-align: right;
+  border: 0px solid #ccc;
+  margin-top: 60px;
+  background-color: #f3f4f6;
+  height: 43px;
+  width: 38px;
+  padding: 0px;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.mp-quantity .negative {
+  margin-left: -75px;
+  background-color: #f3f4f6;
+  height: 44px;
+  width: 39px;
+}
+
+.mp-quantity .positive {
+  margin-left: 10px;
+  background-color: #f3f4f6;
+  height: 44px;
+  width: 39px;
+}
+
+.mp-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.mp-add-to-bag
+ {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.mp-add-to-bag {
+  background-color: #ffffff;
+  border: 1px solid #092635;
+  color: #092635;
+  width: 265px;
+  height: 52px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+}
+
+.mp-checkout {
+  background-color: #092635;
+  width: 265px;
+  height: 52px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}

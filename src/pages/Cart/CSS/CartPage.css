@@ -1,0 +1,35 @@
+/* CartPage.css */
+.cp-cart-container {
+    width: 100%;
+  }
+  
+  .cp-cart-container h1 {
+    font-family: "Lexend", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #171A1f;
+    margin-left: 132px;
+    margin-bottom: 30px;
+  }
+  
+  .cp-cart-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  
+  .cp-left-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px; /* Space between columns */
+  }
+  
+  .cp-left-column > * {
+    margin-bottom: 40px; /* Spacing between OrderSummary and RecipientInformation */
+  }
+  
+  .cp-right-column {
+    flex: 1;
+  }
+  

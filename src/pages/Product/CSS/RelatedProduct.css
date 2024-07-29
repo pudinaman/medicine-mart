@@ -1,0 +1,103 @@
+/* RelatedProducts.css */
+.rp-related-products {
+    width: 100%;
+    margin-top: 60px;
+    
+    
+  }
+  
+  .rp-related-products h2 {
+    text-align: left;
+    margin-bottom: 60px;
+    
+    font-size: 40px;
+    color: #323743;
+    font-family: 'Lexend',sans-serif;
+    font-weight: bold;
+    margin-left: 180px;
+
+  }
+  
+  .rp-products-grid {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    
+  }
+  
+  .rp-product-item {
+    width: 276px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 464px;
+    margin-left: 180px;
+  }
+  
+  .rp-sale-label {
+    background-color: #15abff;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 190px;
+    font-size: 12px;
+    font-family: 'Manrope'sans-serif;
+    border-radius: 14px;
+  }
+  
+  .rp-product-item img {
+    width: 276px;
+    height: 336px;
+    margin-bottom: 10px;
+  }
+  
+  .rp-product-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .rp-product-item p{
+    margin-left:-4px;
+    margin-top: 0px;
+    text-align: left;
+  }
+  
+
+  
+  .rp-sale-price {
+    font-weight: bold;
+    color: #323743;
+    margin-left: 0px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Manrope",sans-serif;
+  }
+  
+  .rp-original-price {
+    position: relative;
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #9095A1;
+    font-family: "Manrope",sans-serif;
+    font-size: 16px;
+    bottom: 5px;
+    padding: 0px;
+    
+  }
+  .rp-new-add-to-cart{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #092635;
+    border-color: #092635;
+    margin-left: 250px;
+    bottom: 60px ;
+    
+
+    
+  }
+  

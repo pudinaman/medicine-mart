@@ -1,0 +1,123 @@
+.filter-container {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-header h2 {
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #171A1F;
+}
+
+.filter-clear-all {
+  background: none;
+  border: none;
+  color: #092635;
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+  color: #171A1F;
+  cursor: pointer;
+}
+
+.filter-salary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.filter-salary-input1,
+.filter-salary-input2 {
+  width: 88px;
+  height: 31px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+.filter-text1 {
+  margin-bottom: 40px;
+  margin-top: 16px;
+}
+
+.filter-slider {
+  width: 224px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+  position: absolute;
+  color: #6D31ED;
+}
+
+.filter-checkbox,
+.filter-rating,
+.filter-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-checkbox label,
+.filter-rating label {
+  margin-bottom: 5px;
+}
+
+.filter-stars {
+  margin-left: 8px;
+  color: #ffc107;
+}
+
+.filter-link a {
+  color: #092635;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.filter-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.filter-dropdown.open {
+  max-height: 500px; /* Adjust as needed */
+}

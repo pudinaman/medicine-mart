@@ -1,0 +1,66 @@
+.story {
+  background-color: #fff; /* Light grey background */
+  border-radius: 8px;
+  margin: auto;
+  max-width: 1440px; /* Ensure the story section does not exceed the image width */
+}
+
+.story h2 {
+  color: #323743; /* Dark grey color for the heading */
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.story-content {
+  background-color: #fff; /* White background for content */
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+  position: relative; /* Create positioning context for the button */
+}
+
+.story-content img {
+  width: 100%; /* Make image responsive */
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+}
+
+.story-content button img{
+  width: 12.86px;
+height: 17.14px;
+top: 3.43px;
+left: 6px;
+gap: 0px;
+border: 2.06px 0px 0px 0px;
+opacity: 0px;
+
+
+}
+
+.story-content button {
+  background-color: #242627; /* Button background color */
+  color: #fff; /* White color for button text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 180px; /* Position the button 20px from the bottom */
+  left: 80%; /* Center the button horizontally */
+  transform: translateX(-50%);
+  padding: 10px 20px; /* Adjust padding as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  font-size: 18px;
+  font-family: 'manrope'sans-serif;
+  font-weight: 400;
+}
+
+.story-content button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.story-content p {
+  color: #666; /* Medium grey color for the paragraph */
+  line-height: 1.6;
+}

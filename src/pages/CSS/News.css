@@ -1,0 +1,108 @@
+/* News.css */
+
+.news-section {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 54px;
+  margin-top: 100px;
+}
+
+.news-header {
+  flex: 0 1 30%;
+  text-align: left;
+  margin-right: 30px;
+}
+
+.news-header h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #323743;
+  font-weight: 700;
+  width: 418px;
+  font-family: 'lexend'sans-serif;
+}
+
+.news-header p {
+  font-size: 16px;
+  color: #171A1F;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.explore-container {
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.explore-button {
+  background-color: #fff;
+  
+  border: 2px solid #6d31ed;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.arrow-buttons {
+  display: flex;
+  margin-left: 120px;
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 5px;
+  margin-left: 10px;
+}
+
+.arrow-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.news-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.news-item {
+  width: 376px;
+  margin: 0 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.news-item p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.news-item span {
+  font-size: 12px;
+  color: #999;
+}
+.explore-button:hover,
+.arrow-button:hover {
+  background-color: #fff;
+  color: inherit; /* or specify the color you want */
+}

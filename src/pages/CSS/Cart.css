@@ -1,0 +1,97 @@
+.cart-summary {
+    width: 900px; /* Increase the width */
+    margin-top: 30px;
+     /* Center horizontally */
+     margin-left: 300px;
+     margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    padding: 40px; /* Add padding for spacing */
+    background: white; /* Add a background color */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    
+    
+  }
+  
+  .cart-summary h2 {
+    font-size: 32px; /* Increase font size */
+    margin-bottom: 30px; /* Increase bottom margin */
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-summary h2::before {
+    content: url('../../assets/cart.png'); /* Replace with actual cart icon path */
+    margin-right: 15px; /* Increase margin-right */
+  }
+  
+  .cart-summary-table-container {
+    height: auto; /* Increase height for a bigger table */
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%; /* Ensure it takes full width of the container */
+  }
+  
+  .cart-summary table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-summary th,
+  .cart-summary td {
+    padding: 15px; /* Increase padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px; /* Increase font size */
+  }
+  
+  .cart-summary th {
+    color: #888;
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
+  
+  .cart-summary .cartproduct-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-summary .cartproduct-info img {
+    width: 120px; /* Increase image size */
+    height: 80px; /* Increase image size */
+    border-radius: 8px;
+    margin-right: 15px; /* Increase margin-right */
+  }
+  
+  .cart-summary .cartdelete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cart-summary .cartdelete-btn img {
+    width: 25px; /* Increase delete button size */
+    height: 25px; /* Increase delete button size */
+  }
+  
+  .cart-summary table tfoot {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+  }
+  .cart-checkout{
+    margin-top: 30px;
+    height: 40px;
+    width: 200px;
+    background-color: #7b1fa2;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+  }
+  

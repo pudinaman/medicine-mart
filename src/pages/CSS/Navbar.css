@@ -1,0 +1,132 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo img {
+  color: #800080;
+  height: 40px;
+  width: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  min-width: 160px;
+  padding: 0.5rem 0;
+  top: 100%;
+  right: 0;
+}
+
+.dropdown-content a{
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+}
+.dropdown-content button {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  width: 160px;
+  text-align: left;
+}
+
+.dropdown-content a:hover,
+.dropdown-content button:hover {
+  background-color: #f9f9f9;
+  color: #007bff;
+}
+
+.nav-icons .user-icon {
+  position: relative;
+}
+
+.nav-icons .user-icon:hover .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: -160px; /* Adjust this value to position the search box */
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  width: 190px; /* Adjust the width as needed */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+  margin-left: -50px;
+}
+
+.search-box input {
+  border: none;
+  padding: 5px;
+  outline: none;
+  width: 100%;
+}
+
+.search-container.active .search-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-icons {
+    gap: 0.5rem;
+  }
+}

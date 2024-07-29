@@ -1,0 +1,248 @@
+.reviews {
+  font-family: Arial, sans-serif;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 40px;
+  position: relative;
+  margin-right: 60px;
+  font-family: "lexend", sans-serif;
+  font-weight: bold;
+  color: #323743;
+}
+
+.write-review {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #092635;
+  border: 1px solid #092635;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+}
+
+.reviews-content {
+  display: flex;
+  gap: 60px;
+}
+
+.reviews-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.overall-rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.rating-score {
+  font-size: 3rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  color: #171A1F;
+  font-weight: bold;
+}
+
+.stars {
+  color: #f5a623;
+  font-size: 2rem;
+}
+
+.total-reviews {
+  color: #171A1F;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  margin-top: 10px;
+}
+
+.reviews-distribution {
+  width: 100%;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.star {
+  flex: 0 0 3rem;
+  font-size: 1.2rem;
+  position: relative;
+  color: #f5a623;
+  font-size: 23px;
+}
+
+.bar {
+  flex-grow: 1;
+  height: 12px;
+  background-color: #eee;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.filled-bar {
+  height: 100%;
+  background-color: #f5a623;
+}
+
+.percentage {
+  flex: 0 0 3rem;
+  font-size: 1.2rem;
+  font-family: "Manrope", sans-serif;
+  color: #171A1F;
+}
+
+.reviews-list {
+  width: 60%;
+}
+
+.review {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.review-image {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.review-content {
+  flex-grow: 1;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+}
+
+.review-date {
+  color: #424856;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.review-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.reviews-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 20px 0;
+}
+
+.page-number {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.review-form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-form h2 {
+  margin-top: 0;
+  font-family: "Manrope", sans-serif;
+  color: #323743;
+}
+
+.review-form label {
+  margin-left: "20px";
+  font-family: "Manrope", sans-serif;
+  color: #323743;
+}
+.r-text-1{
+  margin-left: 10px;
+}
+
+.review-form input[type="number"],
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Manrope", sans-serif;
+}
+
+.review-form .form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.review-form .form-buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  border: none;
+}
+
+.review-form .form-buttons button[type="submit"] {
+  background-color: #092635;
+  color: white;
+}
+
+.review-form .form-buttons button[type="submit"]:hover {
+  background-color: #093635;
+}
+
+.review-form .form-buttons button[type="button"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+.review-form .form-buttons button[type="button"]:hover {
+  background-color: #999;
+}

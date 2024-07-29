@@ -1,0 +1,163 @@
+.new-purchase-history {
+    width: 70%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+  }
+  
+  .new-purchase-history h2 {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    line-height: 5px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .new-purchase-history p {
+    color: #9095A0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .new-order {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+  }
+  
+  .new-order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .new-order-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .new-order-actions button {
+    background: none;
+    border: none;
+    color: #9095A0;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .new-order-actions .dropdown-new {
+    text-decoration: none;
+  }
+  
+  .new-order-products {
+    margin-top: 20px;
+  }
+  
+  .new-order-products .new-product {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+  }
+  
+  .new-product-image {
+    width: 148px;
+    height: 128px;
+    background: #ccc;
+    margin-right: 20px;
+  }
+  
+  .new-product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .new-product-details p {
+    margin: 5px 0;
+  }
+  
+  .new-product-details button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #6D31Ed;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .new-view-product {
+    background: #ccc;
+    color: #333;
+  }
+  
+  .new-product-details-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .new-product-details-left {
+    flex-grow: 1;
+  }
+  
+  .new-product-details-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .new-buy-again {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #6D31Ed;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 97px;
+    border-radius: 4px;
+  }
+  
+  .new-view-product {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #F3F4F6;
+    color: #565E6C;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .new-delivery {
+    color: #9095A0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    margin-left: -500px;
+  }
+  
+  .new-order-no {
+    color: #323843;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+  }
+  
+  .ph-dropdown-new {
+    position: relative;
+    width: 1px;
+  }
+  
+  .dropdown-icon {
+    margin-left: 5px;
+    font-size: 12px;
+    transform: rotate(0);
+    transition: transform 0.3s;
+  }
+  
+  .dropdown-icon.open {
+    transform: rotate(180deg);
+  }
+  .new-product-image img{
+    width: 148px;
+    height: 128px;
+  }
+  

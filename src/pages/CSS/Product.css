@@ -1,0 +1,148 @@
+.one-products {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.one-products h2 {
+  font-size: 48px;
+  color: #323743;
+  font-family: "Lexend", sans-serif;
+}
+
+.one-product-menu {
+  margin-bottom: 20px;
+}
+
+.one-product-menu .one-tab {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.one-product-menu .one-tab:hover,
+.one-add-to-cart:hover {
+  background-color: white;
+  color: inherit;
+}
+
+.one-product-menu .one-active {
+  background: #092636;
+  color: #fff;
+}
+
+.one-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.one-product-item {
+  background: white;
+  border-radius: 10px;
+  width: 286px;
+  position: relative;
+  text-align: left;
+  height: 494px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  text-decoration: none; /* Ensure no underline on links */
+  color: inherit; /* Ensure inherited color */
+}
+
+.one-product-item a {
+  text-decoration: none; /* Ensure no underline on links */
+  color: inherit; /* Ensure inherited color */
+}
+
+.one-best-seller-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #3A4F7A;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.one-product-item h3 {
+  text-align: left;
+  font-family: "Lexend", sans-serif;
+  font-size: 18px;
+  color: #171a1f;
+  margin-bottom: 0;
+}
+
+.one-product-item .one-product-image {
+  width: 276px;
+  height: 334px;
+}
+
+.one-product-description {
+  color: #323743;
+  margin: 0;
+  text-align: left;
+  width: 286px;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 12px;
+}
+
+.one-price {
+  font-size: 32px;
+  margin: 10px 0;
+  text-align: left;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  position: relative;
+  color: #3A4F7A;
+}
+
+.one-price .one-old-price {
+  text-decoration: line-through;
+  margin-left: 8px;
+  font-size: 16px;
+  color: #6f7787;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.one-add-to-cart {
+  background: white;
+  color: #092635;
+  border: 1px solid #092635;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  margin-left: 85px;
+  margin-top: 20px;
+  margin-right: -5px;
+}
+
+@media (max-width: 768px) {
+  .one-product-list {
+    justify-content: center;
+  }
+
+  .one-product-item {
+    width: calc(100% - 40px);
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,740 @@
+.checkout-order {
+    background-color: #ffffff;
+    height: 800px;
+    position: relative;
+    width: 1440px;
+    margin-bottom: 10%;
+    
+  }
+  
+  .checkout-order .text-wrapper {
+    color: #171a1f;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    left: 132px;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: absolute;
+    top: 103px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .container {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #f3f4f6;
+    border-radius: 12px;
+    height: 580px;
+    left: 752px;
+    position: absolute;
+    top: 165px;
+    width: 556px;
+    display: flex;
+    flex: wrap;
+  }
+  
+  .checkout-order .img {
+    height: 48px;
+    left: 28px;
+    position: absolute;
+    top: 98px;
+    width: 48px;
+  }
+  
+  .checkout-order .div {
+    color: #171a1f;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 100px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 97px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .text-wrapper-2 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 97px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .container-2 {
+    height: 48px;
+    left: 28px;
+    position: absolute;
+    top: 226px;
+    width: 48px;
+  }
+  
+  .checkout-order .text-wrapper-3 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 100px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 225px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .text-wrapper-4 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 225px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .exercitation {
+    color: #9095a0;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    top: 251px;
+    width: 320px;
+  }
+  
+  .checkout-order .span {
+    line-height: 22px;
+  }
+  
+  .checkout-order .text-wrapper-5 {
+    line-height: 1.6px;
+  }
+  
+  .checkout-order .container-3 {
+    height: 48px;
+    left: 28px;
+    position: absolute;
+    top: 482px;
+    width: 48px;
+  }
+  
+  .checkout-order .text-wrapper-6 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 100px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 481px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .text-wrapper-7 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 481px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .fugiat-aliqua-et {
+    color: #9095a0;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    top: 507px;
+    width: 327px;
+  }
+  
+  .checkout-order .line {
+    height: 80px;
+    left: 52px;
+    position: absolute;
+    top: 146px;
+    width: 2px;
+  }
+  
+  .checkout-order .line-2 {
+    height: 80px;
+    left: 52px;
+    position: absolute;
+    top: 274px;
+    width: 2px;
+  }
+  
+  .checkout-order .text-wrapper-8 {
+    color: #323842;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 28px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 27px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .container-4 {
+    height: 48px;
+    left: 28px;
+    position: absolute;
+    top: 354px;
+    width: 48px;
+  }
+  
+  .checkout-order .text-wrapper-9 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 100px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 353px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .text-wrapper-10 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 353px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .nulla-exercitation {
+    color: #9095a0;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    top: 379px;
+    width: 328px;
+  }
+  
+  .checkout-order .line-3 {
+    height: 80px;
+    left: 52px;
+    position: absolute;
+    top: 402px;
+    width: 2px;
+  }
+  
+  .checkout-order .p {
+    color: #9095a0;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 170px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 123px;
+    width: 358px;
+  }
+  
+  .checkout-order .line-4 {
+    height: 1px;
+    left: 132px;
+    object-fit: cover;
+    position: absolute;
+    top: 552px;
+    width: 556px;
+  }
+  
+  .checkout-order .line-5 {
+    height: 1px;
+    left: 132px;
+    object-fit: cover;
+    position: absolute;
+    top: 742px;
+    width: 556px;
+  }
+  
+  .checkout-order .container-5 {
+    background-color: #171a1f;
+    box-shadow: 0px 0px 1px #171a1f26, 0px 0px 2px #171a1f33;
+    height: 64px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .checkout-order .avatar {
+    background-color: #bed1f9;
+    border-radius: 18px;
+    height: 36px;
+    left: 1380px;
+    overflow: hidden;
+    position: absolute;
+    top: 14px;
+    width: 36px;
+  }
+  
+  .checkout-order .rectangle {
+    background-color: #d9d9d9;
+    height: 36px;
+  }
+  
+  .checkout-order .image {
+    height: 32px;
+    left: 24px;
+    position: absolute;
+    top: 16px;
+    width: 95px;
+  }
+  
+  .checkout-order .header-menu {
+    height: 32px;
+    left: 447px;
+    position: absolute;
+    top: 16px;
+    width: 532px;
+  }
+  
+  .checkout-order .frame {
+    border-radius: 6px;
+    height: 32px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 76px;
+  }
+  
+  .checkout-order .text-wrapper-11 {
+    color: #a7adb7;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 2px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .frame-2 {
+    border-radius: 6px;
+    height: 32px;
+    left: 76px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 155px;
+  }
+  
+  .checkout-order .chevron-down-large {
+    height: 28px;
+    left: 111px;
+    position: absolute;
+    top: 2px;
+    width: 28px;
+  }
+  
+  .checkout-order .div-wrapper {
+    border-radius: 6px;
+    height: 32px;
+    left: 231px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 98px;
+  }
+  
+  .checkout-order .frame-3 {
+    border-radius: 6px;
+    height: 32px;
+    left: 329px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 88px;
+  }
+  
+  .checkout-order .frame-4 {
+    border-radius: 6px;
+    height: 32px;
+    left: 417px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 115px;
+  }
+  
+  .checkout-order .shopping-cart {
+    height: 24px;
+    left: 1300px;
+    position: absolute;
+    top: 20px;
+    width: 24px;
+  }
+  
+  .checkout-order .bell {
+    height: 24px;
+    left: 1340px;
+    position: absolute;
+    top: 20px;
+    width: 24px;
+  }
+  
+  .checkout-order .visa {
+    color: #171a1f;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 194px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    top: 785px;
+  }
+  
+  .checkout-order .image-2 {
+    height: 32px;
+    left: 132px;
+    position: absolute;
+    top: 793px;
+    width: 46px;
+  }
+  
+  
+  .checkout-order .rectangle-wrapper {
+    background-color: #facfcf;
+    border-radius: 22px;
+    height: 44px;
+    left: 132px;
+    overflow: hidden;
+    position: absolute;
+    top: 620px;
+    width: 44px;
+  }
+  
+  .checkout-order .rectangle-2 {
+    background-color: #d9d9d9;
+    height: 44px;
+  }
+  
+  .checkout-order .austin-foley {
+    color: #323842;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 192px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    top: 619px;
+  }
+  
+  .checkout-order .element {
+    color: #9095a0;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: 216px;
+    letter-spacing: 0;
+    line-height: 12px;
+    position: absolute;
+    top: 647px;
+  }
+  
+  .checkout-order .text-wrapper-12 {
+    line-height: 20px;
+  }
+  
+  .checkout-order .text-wrapper-13 {
+    line-height: 1.7px;
+  }
+  
+  .checkout-order .phone {
+    height: 16px;
+    left: 192px;
+    position: absolute;
+    top: 660px;
+    width: 16px;
+  }
+  
+  .checkout-order .element-mongolia-phoenix {
+    color: #9095a0;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: 216px;
+    letter-spacing: 0;
+    line-height: 12px;
+    position: absolute;
+    top: 677px;
+  }
+  
+  .checkout-order .pin {
+    height: 16px;
+    left: 192px;
+    position: absolute;
+    top: 690px;
+    width: 16px;
+  }
+  
+  .checkout-order .text-wrapper-14 {
+    color: #323842;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    left: 132px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 577px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkout-order .quantity {
+    color: #9095a0;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: 228px;
+    letter-spacing: 0;
+    line-height: 12px;
+    position: relative;
+    top: 179px;
+  }
+  
+  .checkout-order .product-name {
+    color: #323842;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 228px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: relative;
+    top:179px;
+  }
+  
+  .checkout-order .image-3 img{
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    height: 80px;
+    left: 132px;
+    position: relative;
+    top: 257px;
+    width: 80px;
+    
+    display: flex;
+  }
+  
+  
+  .checkout-order .element-2 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 654px;
+    letter-spacing: 0;
+    
+    position: relative;
+    
+    top: 127px;
+  }
+  
+  .checkout-order .quantity-2 {
+    color: #9095a0;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: 228px;
+    letter-spacing: 0;
+    line-height: 12px;
+    position: absolute;
+ 
+  }
+  
+  .checkout-order .product-name-2 {
+    color: #323842;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 228px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    
+  }
+  
+  .checkout-order .image-4 {
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    height: 80px;
+    left: 132px;
+    position: absolute;
+    top: 353px;
+    width: 80px;
+  }
+  
+  .checkout-order .element-3 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 662px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    text-align: right;
+    top: 381px;
+  }
+  
+  .checkout-order .quantity-3 {
+    color: #9095a0;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: 228px;
+    letter-spacing: 0;
+    line-height: 12px;
+    position: absolute;
+    top: 489px;
+  }
+  
+  .checkout-order .product-name-3 {
+    color: #323842;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 228px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    top: 467px;
+  }
+  
+  .checkout-order .image-5 {
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    height: 80px;
+    left: 132px;
+    position: absolute;
+    top: 449px;
+    width: 80px;
+  }
+  
+  .checkout-order .text-wrapper-15 {
+    color: #171a1f;
+    font-family: "Nunito Sans-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 662px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    text-align: right;
+    top: 477px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .order-number {
+    color: #6e7787;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 132px;
+    letter-spacing: 0;
+    line-height: 16px;
+    position: absolute;
+    top: 139px;
+  }
+  
+  .checkout-order .text-wrapper-16 {
+    line-height: 26px;
+  }
+  
+  .checkout-order .view-invoice {
+    color: #eb7623;
+    font-family: "Nunito Sans-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 606px;
+    letter-spacing: 0;
+    line-height: 14px;
+    position: absolute;
+    text-align: right;
+    top: 141px;
+  }
+  
+  .checkout-order .line-6 {
+    height: 1px;
+    left: 132px;
+    object-fit: cover;
+    position: absolute;
+    top: 190px;
+    width: 556px;
+  }
+  
+  .checkout-order .text-wrapper-17 {
+    color: #323842;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    left: 132px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 214px;
+    white-space: nowrap;
+  }
+  
+  .checkout-order .text-wrapper-18 {
+    color: #323842;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    left: 132px;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: absolute;
+    top: 759px;
+    white-space: nowrap;
+  }
+  .product-details{
+    height: 100px;
+  }
+  

@@ -1,0 +1,57 @@
+/* HorizontalMenu.css */
+.horizontal-menu {
+    background-color: white; /* Light purple background */
+    text-align: center;
+   
+    margin-top: 60px;
+  }
+  
+  .horizontal-menu ul {
+    display: inline-block;
+    background-color: white;
+  }
+  
+  .horizontal-menu li {
+    display: inline;
+    color: #092635; /* White text */
+    padding: 10px 20px;
+     /* Vertical lines */
+    font-size: 18px;
+    font-family: "Manrope",sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    
+   
+  }
+  .horizontal-menu a{
+    text-decoration: none;
+  }
+  .horizontal-menu button {
+    display: inline;
+    color: #092635; /* White text */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Manrope",sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 214px;
+    border: 0px;
+    background-color: white;
+    
+   
+  }
+  .horizontal-menu button:hover {
+    background-color: #76a0b5; /* Light purple background on hover */
+    border-radius: 5px;
+    
+    width: 214.2px; /* Optional: adds rounded corners to the hover box */
+  }
+  
+  
+  .horizontal-menu li:last-child {
+    border-right: none; /* Remove border for the last item */
+  }
+  
+  /* Add additional styles for hover effects, active state, etc. */
+  

@@ -10,7 +10,7 @@ const OrderSummary = () => {
   const fetchOrderDetails = async () => {
     try {
       const accessToken = localStorage.getItem("auth-token");
-      const response = await fetch(`https://wayuapi.wayumart.com/cart/${userId}`, {
+      const response = await fetch(`http://localhost:4000/cart/${userId}`, {
         headers: {
           'x-access-token': accessToken
         }
@@ -31,7 +31,7 @@ const OrderSummary = () => {
   const removeFromCart = async (productId, selectedSize) => {
     try {
       const accessToken = localStorage.getItem("auth-token");
-      await fetch(`https://wayuapi.wayumart.com/removeFromCart/${userId}?productId=${productId}&selectedSize=${selectedSize}`, {
+      await fetch(`http://localhost:4000/removeFromCart/${userId}?productId=${productId}&selectedSize=${selectedSize}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

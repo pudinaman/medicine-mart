@@ -135,14 +135,135 @@
   margin-top: 20px;
   margin-right: -5px;
 }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .one-product-item {
+    width: 240px;
+    height: auto;
+  }
+  
+  .one-product-description {
+    width: 240px;
+  }
 
-@media (max-width: 768px) {
+  .one-price {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .one-products h2 {
+    font-size: 36px;
+  }
+  
+  .one-product-menu .one-tab {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
   .one-product-list {
-    justify-content: center;
+    gap: 20px;
   }
 
   .one-product-item {
-    width: calc(100% - 40px);
-    margin: 10px 0;
+    width: 220px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .one-product-description {
+    width: 220px;
+  }
+
+  .one-price {
+    font-size: 24px;
+  }
+
+  .one-add-to-cart {
+    width: 35px;
+    height: 35px;
+    margin-left: 70px;
+    margin-top: 15px;
+    margin-right: -5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .one-products h2 {
+    font-size: 28px;
+  }
+  
+  .one-product-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .one-product-menu .one-tab {
+    margin: 5px 0;
+    font-size: 0.8em;
+  }
+
+  .one-product-list {
+    gap: 15px;
+  }
+
+  .one-product-item {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .one-product-description {
+    width: 100%;
+  }
+
+  .one-price {
+    font-size: 20px;
+  }
+
+  .one-add-to-cart {
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: -5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .one-products h2 {
+    font-size: 24px;
+  }
+  
+  .one-product-menu .one-tab {
+    font-size: 0.7em;
+    padding: 6px 12px;
+  }
+
+  .one-product-list {
+    gap: 10px;
+  }
+
+  .one-product-item {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .one-product-description {
+    width: 100%;
+  }
+
+  .one-price {
+    font-size: 18px;
+  }
+
+  .one-add-to-cart {
+    width: 25px;
+    height: 25px;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-right: -5px;
   }
 }

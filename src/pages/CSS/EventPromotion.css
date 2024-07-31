@@ -93,7 +93,94 @@ color: #323743;
   .see-all-link {
     display: block;
     margin-top: 1rem;
-    color: #6a1b9a;
+    color: #092635;
     text-decoration: none;
   }
-  
+ /* Responsive Styles */
+@media (max-width: 1200px) {
+  .promotion-block {
+    width: 48%;
+  }
+}
+
+@media (max-width: 992px) {
+  .event-promotion h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .promotion-block {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .promotion-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .promotion-text h3 {
+    font-size: 30px;
+  }
+
+  .promotion-text p {
+    font-size: 18px;
+  }
+
+  .promotion-text .explore-button {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-promotion h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .promotion-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promotion-block {
+    width: 90%;
+    margin: 0 0 1rem 0;
+  }
+
+  .promotion-text h3 {
+    font-size: 24px;
+  }
+
+  .promotion-text p {
+    font-size: 16px;
+  }
+
+  .promotion-text .explore-button {
+    font-size: 14px;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .event-promotion h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .promotion-text h3 {
+    font-size: 20px;
+  }
+
+  .promotion-text p {
+    font-size: 14px;
+  }
+
+  .promotion-text .explore-button {
+    font-size: 12px;
+    padding: 0.3rem 0.6rem;
+  }
+}

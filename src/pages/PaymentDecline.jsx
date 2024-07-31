@@ -33,7 +33,7 @@ const PaymentDecline = () => {
         return;
       }
       try {
-        const response = await fetch(`https://wayuapi.wayumart.com/orders/${userId}/${orderId}`, {
+        const response = await fetch(`http://localhost:4000/orders/${userId}/${orderId}`, {
           headers: {
             'x-access-token': localStorage.getItem('auth-token'),
           },

@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header> 
       
       <div className="hero" style={heroStyle}>
         <h1>Gift for your skin</h1>

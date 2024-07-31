@@ -25,7 +25,7 @@ const ContactPage = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://wayuapi.wayumart.com/api/contact/sendmail', {
+      const response = await fetch('http://localhost:4000/api/contact/sendmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

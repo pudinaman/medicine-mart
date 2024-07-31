@@ -57,7 +57,7 @@ const ProductGrid = ({ products }) => {
     };
 
     try {
-      const response = await fetch('https://wayuapi.wayumart.com/cart', {
+      const response = await fetch('http://localhost:4000/cart', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

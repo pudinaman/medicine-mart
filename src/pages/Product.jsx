@@ -14,9 +14,9 @@ const Product = () => {
       try {
         let url = '';
         if (activeTab === 'bestSellers') {
-          url = 'https://wayuapi.wayumart.com/products/popularProducts';
+          url = 'http://localhost:4000/products/popularProducts';
         } else if (activeTab === 'newProducts') {
-          url = 'https://wayuapi.wayumart.com/products';
+          url = 'http://localhost:4000/products';
         }
 
         const response = await fetch(url, {
@@ -67,7 +67,7 @@ const Product = () => {
         return;
       }
 
-      const response = await fetch(`https://wayuapi.wayumart.com/cart`, {
+      const response = await fetch(`http://localhost:4000/cart`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

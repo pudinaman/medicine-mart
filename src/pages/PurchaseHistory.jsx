@@ -14,7 +14,7 @@ const PurchaseHistory = () => {
     const fetchOrders = async () => {
       const token = localStorage.getItem('auth-token');
       try {
-        const response = await fetch(`https://wayuapi.wayumart.com/userOrders/${userId}`, {
+        const response = await fetch(`http://localhost:4000/userOrders/${userId}`, {
           headers: {
             'x-access-token': token,
           },

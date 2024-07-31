@@ -80,7 +80,7 @@ const Reviews = ({ reviews, productId }) => {
     event.preventDefault();
     
     try {
-      const response = await fetch(`https://wayuapi.wayumart.com/products/${productId}/reviews`, {
+      const response = await fetch(`http://localhost:4000/products/${productId}/reviews`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -130,3 +130,53 @@
     gap: 0.5rem;
   }
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+  
+  }
+
+  .nav-icons {
+    gap: 0.5rem;
+  }
+
+  .search-box {
+    left: auto; /* Reset left position */
+    right: 10px; /* Adjust right position for better alignment on mobile */
+  }
+
+  .search-container.active .search-box {
+
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 20px;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .logo img {
+    height: 30px;
+    width: 60px;
+  }
+
+  .nav-icons {
+    width: 100%;
+    margin-left: 300px;
+    
+  }
+
+  .search-box {
+   
+    max-width: 280px; /* Adjust max-width for mobile */
+    right: 20px; /* Ensure it stays within the viewport */
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}

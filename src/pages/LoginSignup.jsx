@@ -24,7 +24,7 @@ const LoginSignup = () => {
 
   const saveUserToBackend = async (firebaseUid) => {
     try {
-      const response = await fetch('https://wayuapi.wayumart.com/authenticate', {
+      const response = await fetch('http://localhost:4000/authenticate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

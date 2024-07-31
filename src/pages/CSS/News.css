@@ -1,5 +1,4 @@
-/* News.css */
-
+/* Base styles */
 .news-section {
   padding: 20px;
   display: flex;
@@ -7,12 +6,14 @@
   justify-content: flex-start;
   padding-left: 54px;
   margin-top: 100px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .news-header {
   flex: 0 1 30%;
   text-align: left;
   margin-right: 30px;
+  position: relative;
 }
 
 .news-header h2 {
@@ -20,8 +21,8 @@
   margin-bottom: 10px;
   color: #323743;
   font-weight: 700;
-  width: 418px;
-  font-family: 'lexend'sans-serif;
+  width: 100%; /* Make sure the width adjusts on smaller screens */
+  font-family: 'Lexend', sans-serif;
 }
 
 .news-header p {
@@ -35,6 +36,7 @@
   display: flex;
   align-items: center;
   margin-top: 120px;
+  flex-direction: column; /* Stack buttons on smaller screens */
 }
 
 .explore-button {
@@ -45,12 +47,13 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  margin-bottom: 10px; /* Add space between buttons */
 }
-
 
 .arrow-buttons {
   display: flex;
-  margin-left: 120px;
+  justify-content: center; /* Center the arrow buttons */
+  margin-top: 10px;
 }
 
 .arrow-button {
@@ -59,13 +62,11 @@
   cursor: pointer;
   padding: 0;
   margin: 0 5px;
-  margin-left: 10px;
 }
 
 .arrow-button img {
   width: 24px;
   height: 24px;
-  color: #092635;
 }
 
 .news-container {
@@ -73,6 +74,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center; /* Center news items */
 }
 
 .news-item {
@@ -102,8 +104,110 @@
   font-size: 12px;
   color: #999;
 }
+
 .explore-button:hover,
 .arrow-button:hover {
   background-color: #fff;
   color: inherit; /* or specify the color you want */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .news-header h2 {
+    font-size: 36px;
+  }
+
+  .news-header p {
+    font-size: 14px;
+  }
+
+  .explore-container {
+    margin-top: 60px;
+  }
+
+  .news-item {
+    width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .news-section {
+    padding-left: 20px; /* Reduce padding on smaller screens */
+    margin-top: 50px;
+  }
+
+  .news-header {
+    flex: 1 1 100%;
+    margin-right: 0;
+    text-align: center; /* Center text on smaller screens */
+    position: relative;
+  }
+
+  .news-header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .news-header p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .explore-container {
+    margin-top: 30px;
+  }
+
+  .news-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-header h2 {
+    font-size: 24px;
+  }
+
+  .news-header p {
+    font-size: 10px;
+  }
+
+  .explore-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .arrow-button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .news-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .news-header h2 {
+    font-size: 22px;
+  }
+
+  .news-header p {
+    font-size: 14px;
+  }
+
+  .explore-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .arrow-button img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .news-item {
+    width: 100%;
+    padding: 15px;
+  }
 }

@@ -168,19 +168,29 @@ color: #323743;
 @media (max-width: 576px) {
   .event-promotion h2 {
     font-size: 22px;
-    line-height: 28px;
+    
   }
 
   .promotion-text h3 {
-    font-size: 20px;
+    font-size: 15px;
+    position: relative;
+    right: 80px;
+    height: 20px;
   }
 
   .promotion-text p {
     font-size: 14px;
+    height: 20px;
+    margin-left: -23px;
+   
   }
 
   .promotion-text .explore-button {
     font-size: 12px;
     padding: 0.3rem 0.6rem;
+    margin-right: 160px;
+  }
+  .see-all-link{
+    font-size: 12px;
   }
 }

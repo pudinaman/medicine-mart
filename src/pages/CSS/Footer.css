@@ -1,3 +1,5 @@
+/* Footer.css */
+
 .footer {
   background-color: #1b1b1d;
   color: #fff;
@@ -12,11 +14,13 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .footer-section {
   flex: 1;
   padding: 20px;
+  min-width: 200px; /* Ensure sections are not too narrow */
 }
 
 .footer-section h2 {
@@ -56,6 +60,7 @@
   border: none;
   border-radius: 3px 0 0 3px;
   outline: none;
+  flex: 1; /* Make input grow to take available space */
 }
 
 .email-subscription button {
@@ -70,13 +75,17 @@
 .social-media {
   display: flex;
   margin-top: 20px;
+  justify-content: center; /* Center social media icons */
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .social-media a {
-  margin-right: 10px;
+  margin: 0 10px; /* Space between icons */
 }
-.social-media img{
+
+.social-media img {
   height: 24px;
+  width: 24px; /* Ensure icons have consistent width */
 }
 
 .footer-bottom {
@@ -88,4 +97,66 @@
   color: #fff;
   text-decoration: none;
   margin: 0 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center; /* Center text for better readability */
+    margin-bottom: 20px;
+    min-width: auto; /* Remove min-width constraint */
+  }
+
+  .email-subscription {
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center;
+  }
+
+  .email-subscription input {
+    width: 100%; /* Full width input */
+    margin-bottom: 10px; /* Add space between input and button */
+  }
+
+  .email-subscription button {
+    width: auto; /* Allow button width to adjust based on content */
+  }
+
+  .social-media {
+    flex-direction: row; /* Ensure horizontal layout */
+    align-items: center; /* Center icons vertically */
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-section h2 {
+    font-size: 16px;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+
+  .email-subscription input,
+  .email-subscription button {
+    padding: 8px;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .social-media img {
+    height: 20px; /* Smaller social media icons */
+    width: 20px; /* Ensure icons have consistent width */
+  }
+
+  .footer-bottom a {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
 }

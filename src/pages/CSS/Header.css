@@ -2,6 +2,7 @@ header {
     background-color: #f8f8f8;
     padding:2px;
     border-bottom: 1px solid #ddd;
+    width: 97%;
   }
   
   header nav {

@@ -1,3 +1,5 @@
+/* Filter.css */
+
 .filter-container {
   width: 300px;
   padding: 20px;
@@ -120,4 +122,94 @@
 
 .filter-dropdown.open {
   max-height: 500px; /* Adjust as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .filter-container {
+    width: 100%; /* Full width on smaller screens */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .filter-header {
+    flex-direction: column; /* Stack header items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .filter-header h2 {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Adjust spacing */
+  }
+
+  .filter-clear-all {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .filter-salary {
+    flex-direction: column; /* Stack salary inputs vertically */
+  }
+
+  .filter-salary-input1,
+  .filter-salary-input2 {
+    width: 100%; /* Full width inputs */
+    margin-bottom: 10px; /* Adjust spacing */
+  }
+
+  .filter-slider {
+    width: 100%; /* Full width slider */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .filter-section {
+    margin-bottom: 10px; /* Adjust spacing between sections */
+  }
+
+  .filter-title {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .filter-text1 {
+    margin-bottom: 20px; /* Adjust spacing */
+  }
+
+  .filter-dropdown.open {
+    max-height: 300px; /* Adjust dropdown height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .filter-container {
+    padding: 10px; /* Adjust padding for very small screens */
+  }
+
+  .filter-header h2 {
+    font-size: 12px; /* Further adjust font size */
+  }
+
+  .filter-clear-all {
+    font-size: 10px; /* Further adjust font size */
+  }
+
+  .filter-salary-input1,
+  .filter-salary-input2 {
+    height: 28px; /* Adjust input height */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .filter-slider {
+    margin-top: 10px; /* Reduce top margin */
+  }
+
+  .filter-title {
+    font-size: 12px; /* Further adjust font size */
+  }
+
+  .filter-text1 {
+    margin-bottom: 10px; /* Reduce spacing */
+  }
+  .css-cp2j25-MuiSlider-thumb  {
+    margin-top: 10px; /* Reduce top margin */
+    width:20px;
+  }
 }

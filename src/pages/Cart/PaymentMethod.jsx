@@ -14,7 +14,7 @@ const PaymentMethod = () => {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/cart/${userId}`, {
+        const response = await fetch(`https://wayuapi.wayumart.com/cart/${userId}`, {
           headers: {
             'x-access-token': localStorage.getItem('auth-token'),
           },
@@ -26,7 +26,7 @@ const PaymentMethod = () => {
         setCart(cartData);
         setSubtotal(parseFloat(cartData.bill).toFixed(2));
 
-        const billingResponse = await fetch(`http://localhost:4000/billing/${userId}`, {
+        const billingResponse = await fetch(`https://wayuapi.wayumart.com/billing/${userId}`, {
           headers: {
             'x-access-token': localStorage.getItem('auth-token'),
           },
@@ -69,7 +69,7 @@ const PaymentMethod = () => {
         throw new Error('Razorpay SDK not loaded');
       }
 
-      const orderResponse = await fetch('http://localhost:4000/orders', {
+      const orderResponse = await fetch('https://wayuapi.wayumart.com/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

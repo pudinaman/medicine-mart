@@ -21,7 +21,7 @@ const SearchedProduct = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch(`http://localhost:4000/products?search=${searchQuery}`);
+                const response = await fetch(`https://wayuapi.wayumart.com/products?search=${searchQuery}`);
 
                 if (!response.ok) {
                     throw new Error('Network response was not ok');

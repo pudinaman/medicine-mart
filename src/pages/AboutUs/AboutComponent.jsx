@@ -7,7 +7,7 @@ const AboutComponent = () => {
   useEffect(() => {
     const fetchAboutData = async () => {
       try {
-        const response = await fetch('http://localhost:4000/api/about/get');
+        const response = await fetch('https://wayuapi.wayumart.com/api/about/get');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

@@ -124,6 +124,7 @@ const Product = () => {
               alt={product.title}
               className="one-product-image"
               onClick={() => handleProductClick(product)}
+              href='wayumart-product'
             />
             <h3>{product.product_name}</h3>
             <p className="one-product-description">{product.short_description}</p>

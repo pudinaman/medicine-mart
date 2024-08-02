@@ -1,103 +1,220 @@
-/* RelatedProducts.css */
+/* Default Styles (For larger screens) */
 .rp-related-products {
-    width: 100%;
-    margin-top: 60px;
-    
-    
-  }
-  
+  width: 100%;
+  margin-top: 60px;
+}
+
+.rp-related-products h2 {
+  text-align: left;
+  margin-bottom: 60px;
+  font-size: 40px;
+  color: #323743;
+  font-family: 'Lexend', sans-serif;
+  font-weight: bold;
+  margin-left: 180px;
+}
+
+.rp-products-grid {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.rp-product-item {
+  width: 276px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 464px;
+  margin-left: 180px;
+}
+
+.rp-sale-label {
+  background-color: #15abff;
+  color: white;
+  padding: 5px 10px;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 190px;
+  font-size: 12px;
+  font-family: 'Manrope', sans-serif;
+  border-radius: 14px;
+}
+
+.rp-product-item img {
+  width: 276px;
+  height: 336px;
+  margin-bottom: 10px;
+}
+
+.rp-product-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: left;
+}
+
+.rp-product-item p {
+  margin-left: -4px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.rp-sale-price {
+  font-weight: bold;
+  color: #323743;
+  margin-left: 0;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Manrope", sans-serif;
+}
+
+.rp-original-price {
+  position: relative;
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #9095A1;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  bottom: 5px;
+  padding: 0;
+}
+
+.rp-new-add-to-cart {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: #092635;
+  border-color: #092635;
+  margin-left: 250px;
+  bottom: 60px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
   .rp-related-products h2 {
-    text-align: left;
-    margin-bottom: 60px;
-    
-    font-size: 40px;
-    color: #323743;
-    font-family: 'Lexend',sans-serif;
-    font-weight: bold;
-    margin-left: 180px;
+      margin-left: 120px;
+      font-size: 36px;
+  }
 
-  }
-  
-  .rp-products-grid {
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    
-  }
-  
   .rp-product-item {
-    width: 276px;
-    margin-bottom: 20px;
-    text-align: center;
-    height: 464px;
-    margin-left: 180px;
+      width: 250px;
+      margin-left: 120px;
   }
-  
+
   .rp-sale-label {
-    background-color: #15abff;
-    color: white;
-    padding: 5px 10px;
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 190px;
-    font-size: 12px;
-    font-family: 'Manrope'sans-serif;
-    border-radius: 14px;
+      margin-left: 160px;
+      font-size: 10px;
   }
-  
+
   .rp-product-item img {
-    width: 276px;
-    height: 336px;
-    margin-bottom: 10px;
+      width: 250px;
+      height: 300px;
   }
-  
-  .rp-product-item h3 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    text-align: left;
-  }
-  .rp-product-item p{
-    margin-left:-4px;
-    margin-top: 0px;
-    text-align: left;
-  }
-  
 
-  
   .rp-sale-price {
-    font-weight: bold;
-    color: #323743;
-    margin-left: 0px;
-    font-size: 32px;
-    font-weight: bold;
-    font-family: "Manrope",sans-serif;
+      font-size: 28px;
   }
-  
-  .rp-original-price {
-    position: relative;
-    text-decoration: line-through;
-    margin-left: 10px;
-    color: #9095A1;
-    font-family: "Manrope",sans-serif;
-    font-size: 16px;
-    bottom: 5px;
-    padding: 0px;
-    
-  }
-  .rp-new-add-to-cart{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    color: #092635;
-    border-color: #092635;
-    margin-left: 250px;
-    bottom: 60px ;
-    
 
-    
+  .rp-original-price {
+      font-size: 14px;
   }
-  
+
+  .rp-new-add-to-cart {
+      margin-left: 200px;
+      width: 35px;
+      height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rp-related-products h2 {
+      margin-left: 60px;
+      font-size: 30px;
+  }
+
+  .rp-product-item {
+      width: 220px;
+      margin-left: 60px;
+  }
+
+  .rp-sale-label {
+      margin-left: 120px;
+      font-size: 8px;
+  }
+
+  .rp-product-item img {
+      width: 220px;
+      height: 270px;
+  }
+
+  .rp-sale-price {
+      font-size: 24px;
+  }
+
+  .rp-original-price {
+      font-size: 12px;
+  }
+
+  .rp-new-add-to-cart {
+      margin-left: 150px;
+      width: 30px;
+      height: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rp-related-products {
+      margin-top: 30px;
+  }
+
+  .rp-related-products h2 {
+      font-size: 24px;
+      margin-left: 20px;
+  }
+
+  .rp-products-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .rp-product-item {
+      width: 60%;
+      margin-left: 0;
+      margin-bottom: 20px;
+      text-align: center;
+      height: auto;
+  }
+
+  .rp-sale-label {
+      margin-left: 10px;
+      font-size: 6px;
+  }
+
+  .rp-product-item img {
+      width: 100%;
+      height: auto;
+  }
+
+  .rp-sale-price {
+      font-size: 18px;
+  }
+
+  .rp-original-price {
+      font-size: 10px;
+      margin-top: 10px;
+  }
+
+  .rp-new-add-to-cart {
+      margin-left: 10px;
+      width: 26px;
+      height: 26px;
+      margin-top: 19px;
+     
+  }
+   .svg:not(:host).svg-inline--fa{
+    padding: 20px;
+  }
+}

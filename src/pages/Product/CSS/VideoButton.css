@@ -1,54 +1,120 @@
+/* Default Styles */
 .video-button-container {
     position: relative;
     width: 1176px;
     height: 662px;
-   /* max-width: 800px;*/ /* Adjust as needed */
     margin: 0 auto;
-    text-align: left; /* Center the title */
-  }
-  
-  .video-button-container h2 {
-    font-size: 40px; /* Adjust as needed */
-    color: #323743; /* Replace with the exact color from your image */
+    text-align: left;
+}
+
+.video-button-container h2 {
+    font-size: 40px;
+    color: #323743;
     margin-bottom: 20px;
     font-weight: 700;
-    font-family: "lexend",sans-serif;
+    font-family: "lexend", sans-serif;
+}
 
-    /*margin-right:970px;*/
-  }
-  
-  .background-image {
+.background-image {
     width: 100%;
     height: auto;
     display: block;
-  }
-  
-  .watch-video-button {
+}
+
+.watch-video-button {
     position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #171A1f; /* Replace with the exact color from your image */
+    background-color: #171A1f;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px; /* Adjust as needed */
+    border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
     width: 130px;
     height: 32px;
     font-size: 18px;
-    font-family: "Manrope",sans-serif;
+    font-family: "Manrope", sans-serif;
     margin-top: 60px;
-  }
+}
 
-  .watch-video-button img{
-    position: absolute;
+.watch-video-button img {
     height: 24px;
     width: 24px;
     margin-left: 10px;
-  }
-  
- 
-  
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .video-button-container {
+        width: 90%;
+        height: 300px;
+    }
+
+    .video-button-container h2 {
+        font-size: 36px;
+    }
+
+    .watch-video-button {
+        width: 120px;
+        height: 28px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .watch-video-button img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-button-container {
+        width: 85%;
+        height: 200px;
+    }
+
+    .video-button-container h2 {
+        font-size: 30px;
+    }
+
+    .watch-video-button {
+        width: 110px;
+        height: 24px;
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .watch-video-button img {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-button-container {
+        width: 85%;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .video-button-container h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .watch-video-button {
+        width: 100px;
+        height: 22px;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .watch-video-button img {
+        height: 16px;
+        width: 16px;
+    }
+}

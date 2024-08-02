@@ -393,21 +393,34 @@
     margin-left: 0;
     font-size: 8px;
   }
+  .mp-breadcrumb a{
+    font-size: 8px;
+  }
 
+  .mp-thumbnails{
+   height: 100px;
+  }
   .mp-thumbnail img {
     width: 40px;
     height: 50px;
-    margin-left: 0;
+    margin-left:20px;
+    
   }
 
   .mp-product-main {
     flex-direction: column;
   }
-
+  .mp-product-image{
+    width: 200px;
+  }
+  
   .mp-product-image img {
     width: 200px;
     height: 250px;
-    margin: 0 auto;
+    margin-left: 40px;
+    margin-right: 0px;
+    
+    
   }
 
   .mp-product-info {
@@ -444,29 +457,64 @@
     font-size: 12px;
   }
 
+  
   .mp-quantity {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row; /* Ensure elements are aligned in a row */
+    align-items: center; /* Center-align items vertically */
+    justify-content: center; /* Center-align items horizontally */
+    gap: 5px; /* Adjust gap as needed */
+    margin-right: 220px;
+  }
+  .mp-quantity label{
+    
+    align-self: center;
+  }
+
+  .mp-quantity .negative,
+  .mp-quantity input,
+  .mp-quantity .positive {
+    width: 30px; /* Adjust width */
+    height: 30px; /* Adjust height */
+    font-size: 14px; /* Adjust font size */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
   }
 
   .mp-quantity input {
-    width: 20px;
-    height: 30px;
-    font-size: 12px;
-    text-align: center;
+    text-align: center; /* Center text in input */
+    line-height: 30px; /* Adjust line-height to center text vertically */
+    background-color: #f3f4f6;
+    border: 1px solid #ccc;
   }
 
   .mp-quantity button {
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 30px; /* Same width for buttons */
+    height: 30px; /* Same height for buttons */
+    font-size: 14px; /* Adjust font size */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
   }
 
-  .mp-add-to-bag,
+  .mp-quantity .negative {
+    /* Additional styles for negative button if needed */
+  }
+
+  .mp-quantity .positive {
+    /* Additional styles for positive button if needed */
+  }
+   .mp-add-to-bag,
   .mp-checkout {
     width: 140px;
     height: 35px;
     font-size: 12px;
     padding: 5px;
   }
+
 }
+ 

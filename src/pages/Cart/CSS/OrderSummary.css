@@ -1,3 +1,4 @@
+/* Default Styles */
 .order-summary {
   width: 808px;
   margin-left: 132px;
@@ -73,4 +74,92 @@
 
 .no-product-found {
   margin-left: 140px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .order-summary {
+    width: 90%; /* Reduce width for smaller screens */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+  }
+
+  .order-summary h2 {
+    font-size: 20px; /* Reduce font size */
+    margin-bottom: 15px; /* Reduce bottom margin */
+  }
+
+  .order-summary .product-info img {
+    width: 80px; /* Reduce image size */
+    height: 50px; /* Reduce image size */
+    margin-right: 8px; /* Reduce margin-right */
+  }
+
+  .order-summary th,
+  .order-summary td {
+    padding: 8px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .order-summary th {
+    padding: 10px; /* Reduce header padding */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-summary {
+    width: 100%; /* Full width for small screens */
+    margin-left: 0; /* No left margin */
+    margin-right: 0; /* No right margin */
+  }
+
+  .order-summary h2 {
+    font-size: 18px; /* Further reduce font size */
+    margin-bottom: 10px; /* Further reduce bottom margin */
+  }
+
+  .order-summary .product-info img {
+    width: 60px; /* Further reduce image size */
+    height: 40px; /* Further reduce image size */
+    margin-right: 5px; /* Further reduce margin-right */
+  }
+
+  .order-summary th,
+  .order-summary td {
+    padding: 6px; /* Further reduce padding */
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .order-summary th {
+    padding: 8px; /* Further reduce header padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order-summary {
+    width: 100%; /* Full width for very small screens */
+    margin-left: 0; /* No left margin */
+    margin-right: 0; /* No right margin */
+  }
+
+  .order-summary h2 {
+    font-size: 16px; /* Reduce font size */
+    margin-bottom: 5px; /* Reduce bottom margin */
+  }
+
+  .order-summary .product-info img {
+    width: 50px; /* Further reduce image size */
+    height: 30px; /* Further reduce image size */
+    margin-right: 2px; /* Further reduce margin-right */
+  }
+
+  .order-summary th,
+  .order-summary td {
+    padding: 4px; /* Further reduce padding */
+    font-size: 10px; /* Further reduce font size */
+  }
+
+  .order-summary th {
+    padding: 6px; /* Further reduce header padding */
+  }
 }

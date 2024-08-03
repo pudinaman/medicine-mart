@@ -1,3 +1,4 @@
+/* Default Styles */
 .reviews {
   font-family: Arial, sans-serif;
   max-width: 1180px;
@@ -196,11 +197,12 @@
 }
 
 .review-form label {
-  margin-left: "20px";
+  margin-left: 20px;
   font-family: "Manrope", sans-serif;
   color: #323743;
 }
-.r-text-1{
+
+.r-text-1 {
   margin-left: 10px;
 }
 
@@ -245,4 +247,124 @@
 
 .review-form .form-buttons button[type="button"]:hover {
   background-color: #999;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .reviews {
+    padding: 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header h1 {
+    font-size: 36px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .reviews-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .reviews-summary {
+    width: 100%;
+  }
+
+  .reviews-list {
+    width: 100%;
+  }
+
+  .review {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .reviews-summary {
+    width: 100%;
+  }
+
+  .rating-score {
+    font-size: 36px;
+  }
+
+  .stars {
+    font-size: 1.5rem;
+  }
+
+  .review-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .review-content {
+    font-size: 12px;
+  }
+
+  .review-form-popup {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .review-form h2 {
+    font-size: 24px;
+  }
+
+  .review-form input[type="number"],
+  .review-form textarea {
+    padding: 8px;
+  }
+
+  .review-form .form-buttons button {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .review {
+    margin: 0.5rem 0;
+    padding-bottom: 0.5rem;
+  }
+
+  .review-image {
+    width: 36px;
+    height: 36px;
+  }
+
+  .review-content {
+    font-size: 10px;
+  }
+
+  .review-form-popup {
+    width: 83%;
+    padding: 15px;
+    margin-right: 25px;
+  }
+
+  .review-form h2 {
+    font-size: 20px;
+  }
+
+  .review-form input[type="number"],
+  .review-form textarea {
+    padding: 6px;
+  }
+
+  .review-form .form-buttons button {
+    padding: 0.3rem 0.6rem;
+  }
 }

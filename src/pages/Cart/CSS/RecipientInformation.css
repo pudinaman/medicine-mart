@@ -2,125 +2,187 @@
 
 /* Container styles */
 .ri-container {
-    
-    width: 808px;
-    
-    padding: 2px;
-    background-color: #FFFFFF;
-    border: 0px solid #ccc;
-    border-radius: 8px;
-    height: 376px;
-    margin-left: 132px;
-    margin-top: auto;
+  width: 100%; /* Make the container responsive */
+  max-width: 808px; /* Set a max-width */
+  padding: 10px; /* Add padding for better spacing */
+  background-color: #FFFFFF;
+  border: 0px solid #ccc;
+  border-radius: 8px;
+  height: auto; /* Adjust height to fit content */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Heading styles */
+.ri-container h2::before {
+  margin-right: 10px;
+  content: url(../../../assets/facer.png);
+}
+
+.ri-container h2 {
+  font-size: 24px; /* Adjust font size for smaller screens */
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+/* Preview styles */
+.preview {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-family: "Lexend", sans-serif;
+}
+
+.preview input {
+  height: 35px;
+  width: 100%; /* Make the input width responsive */
+  border: 0px;
+  background-color: #f3f4f6;
+}
+
+/* Popup overlay styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  backdrop-filter: blur(4px); /* Blur effect for modern browsers */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup styles */
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Make popup width responsive */
+  max-width: 600px; /* Set a max-width for larger screens */
+  max-height: 90%;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Popup content styles */
+.popup-content {
+  width: 100%; /* Make content width responsive */
+  margin: 0 auto;
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Make inputs and textareas responsive */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Checkbox group styles */
+.checkbox-group {
+  margin-top: 10px;
+}
+
+/* Delivery note styles */
+.delivery-note {
+  margin-bottom: 15px;
+}
+
+/* Popup buttons styles */
+.popup-buttons {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.popup-buttons button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.popup-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .ri-container {
+    padding: 15px; /* Adjust padding for smaller screens */
   }
-  .ri-container h2::before{
-   margin-right: 10px;
-   content: url(../../../assets/facer.png);
-   
-    
+
+  .ri-container h2 {
+    font-size: 20px; /* Adjust font size */
   }
-  .ri-container h2{
-    max-height: 24px;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Preview styles */
-  .preview {
-    cursor: pointer;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    display: table-row-group;
-    font-family: "lexend",sans-serif;
-  }
-  .preview input{
-    height: 35px;
-    width: 365px;
-    border: 0px;
-    background-color: #f3f4f6;
-  }
-  
-  .preview:hover {
-    background-color: #e0e0e0;
-  }
-  
-  /* Popup overlay styles */
-  .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
-    backdrop-filter: blur(4px); /* Blur effect for modern browsers */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  /* Popup styles */
+
   .popup {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-    max-height: 90%;
-    overflow-y: auto; /* Enable vertical scrolling */
+    width: 90%; /* Ensure popup width is responsive */
+    max-width: 500px; /* Reduce max-width */
   }
-  
-  .popup-content {
-    width: 400px;
-    margin: 0 auto;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
+
   .form-group input,
   .form-group textarea {
-    width: 400px;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    font-size: 12px; /* Adjust font size */
   }
-  
-  .checkbox-group {
-    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .ri-container {
+    padding: 10px; /* Further reduce padding */
   }
-  
-  .delivery-note {
-    margin-bottom: 15px;
+
+  .ri-container h2 {
+    font-size: 18px; /* Further reduce font size */
   }
-  
-  .popup-buttons {
-    text-align: right;
-    margin-top: 10px;
+
+  .popup {
+    width: 95%; /* Make popup width responsive */
+    max-width: 400px; /* Reduce max-width further */
   }
-  
-  .popup-buttons button {
-    margin-left: 10px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    transition: background-color 0.3s ease, color 0.3s ease;
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px; /* Adjust font size for readability */
   }
-  
-  .popup-buttons button:hover {
-    background-color: #0056b3;
+}
+
+@media screen and (max-width: 480px) {
+  .ri-container {
+    padding: 5px; /* Minimal padding for very small screens */
   }
-  
+
+  .ri-container h2 {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .popup {
+    width: 95%; /* Ensure popup takes full width */
+    max-width: 300px; /* Set max-width for very small screens */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 12px; /* Adjust font size for small screens */
+  }
+}

@@ -1,35 +1,115 @@
 /* CartPage.css */
 .cp-cart-container {
-    width: 100%;
+  width: 100%;
+  padding: 0 20px; /* Add padding to ensure content is not too close to the edges */
+}
+
+.cp-cart-container h1 {
+  font-family: "Lexend", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #171A1f;
+  margin-left: 0; /* Center horizontally on smaller screens */
+  margin-bottom: 30px;
+  text-align: center; /* Center align the heading */
+}
+
+.cp-cart-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow content to wrap for smaller screens */
+  margin-bottom: 100px;
+}
+
+.cp-left-column,
+.cp-right-column {
+  flex: 1;
+  min-width: 300px; /* Set a minimum width for columns to avoid squishing content */
+}
+
+.cp-left-column {
+  margin-right: 0; /* Remove right margin on smaller screens */
+  margin-bottom: 40px; /* Add bottom margin for spacing */
+}
+
+.cp-right-column {
+  /* No additional styles needed for right column on small screens */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .cp-cart-container {
+    padding: 0 15px; /* Reduce padding */
   }
-  
+
   .cp-cart-container h1 {
-    font-family: "Lexend", sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-    color: #171A1f;
-    margin-left: 132px;
-    margin-bottom: 30px;
+    font-size: 32px; /* Reduce font size */
+    margin-left: 0; /* Center heading */
+    text-align: center; /* Center align the heading */
   }
-  
+
   .cp-cart-content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+    align-items: center; /* Center content horizontally */
   }
-  
+
   .cp-left-column {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-right: 20px; /* Space between columns */
+    margin-right: 0; /* Remove right margin */
   }
-  
-  .cp-left-column > * {
-    margin-bottom: 40px; /* Spacing between OrderSummary and RecipientInformation */
-  }
-  
+
   .cp-right-column {
-    flex: 1;
+    margin-top: 20px; /* Add top margin for spacing */
   }
-  
+}
+
+@media screen and (max-width: 768px) {
+  .cp-cart-container {
+    padding: 0 10px; /* Further reduce padding */
+  }
+
+  .cp-cart-container h1 {
+    font-size: 24px; /* Further reduce font size */
+    margin-bottom: 20px; /* Reduce bottom margin */
+  }
+
+  .cp-cart-content {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center content horizontally */
+    margin-bottom: 60px; /* Reduce bottom margin */
+  }
+
+  .cp-left-column,
+  .cp-right-column {
+    min-width: 100%; /* Ensure columns take full width */
+  }
+
+  .cp-left-column {
+    margin-bottom: 30px; /* Reduce bottom margin */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cp-cart-container {
+    padding: 0 5px; /* Minimal padding for very small screens */
+  }
+
+  .cp-cart-container h1 {
+    font-size: 18px; /* Reduce font size */
+    margin-bottom: 10px; /* Reduce bottom margin */
+  }
+
+  .cp-cart-content {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center content horizontally */
+    margin-bottom: 40px; /* Further reduce bottom margin */
+  }
+
+  .cp-left-column,
+  .cp-right-column {
+    min-width: 100%; /* Ensure columns take full width */
+  }
+
+  .cp-left-column {
+    margin-bottom: 20px; /* Further reduce bottom margin */
+  }
+}

@@ -3,7 +3,7 @@ import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { getAuth, signOut } from 'firebase/auth';
 import './CSS/Navbar.css';
-import logo from '../assets/wayubg.png'
+import logo from '../assets/wayubg.png';
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -57,7 +57,11 @@ const Navbar = () => {
   };
 
   const handleCartIconClick = () => {
-    navigate('/Cart'); // Navigate to CartPage
+    if (isLoggedIn) {
+      navigate('/Cart'); // Navigate to CartPage if logged in
+    } else {
+      navigate('/login'); // Redirect to login page if not logged in
+    }
   };
 
   const handleStoreClick = (e) => {

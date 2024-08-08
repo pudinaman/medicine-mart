@@ -187,3 +187,150 @@
     border: 0px;
     border-radius: 8px;
 }
+/* Normal screen styles remain unchanged */
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .loginsignup {
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+  }
+
+  .loginsignup-container {
+    max-width: 90%; /* Adjust container width for medium screens */
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+
+  .loginsignup h1 {
+    font-size: 28px; /* Adjust font size for medium screens */
+  }
+
+  .loginsignup-subtitle {
+    font-size: 12px; /* Adjust font size for medium screens */
+  }
+
+  .loginsignup-fields input {
+    font-size: 12px; /* Adjust font size for input fields */
+  }
+
+  .oauth-button {
+    padding: 10px; /* Adjust padding for smaller buttons */
+  }
+
+  .loginsignup-remember {
+    flex-direction: column; /* Stack remember me items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .loginsignup-remember label {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .left-side img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .Continue-button, .continue2-button {
+    width: 100%; /* Full width for buttons on smaller screens */
+    height: 40px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .loginsignup {
+    flex-direction: column; /* Stack login/signup and image vertically */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .loginsignup-container {
+    max-width: 100%; /* Full width for very small screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .loginsignup h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .loginsignup-subtitle {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .loginsignup-fields input {
+    font-size: 12px; /* Adjust font size for input fields */
+  }
+
+  .oauth-button {
+    padding: 10px; /* Adjust padding for smaller buttons */
+  }
+
+  .loginsignup-remember {
+    flex-direction: column; /* Stack remember me items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .loginsignup-remember label {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .left-side img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .Continue-button, .continue2-button {
+    width: 100%; /* Full width for buttons on smaller screens */
+    height: 40px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .loginsignup {
+    padding: 10px; /* Adjust padding for very small screens */
+  }
+
+  .loginsignup-container {
+    max-width: 100%; /* Full width for very small screens */
+    padding: 15px; /* Adjust padding for very small screens */
+  }
+
+  .loginsignup h1 {
+    font-size: 20px; /* Adjust font size for very small screens */
+  }
+
+  .loginsignup-subtitle {
+    font-size: 12px; /* Adjust font size for very small screens */
+  }
+
+  .loginsignup-fields input {
+    font-size: 12px; /* Adjust font size for input fields */
+  }
+
+  .oauth-button {
+    padding: 8px; /* Adjust padding for very small buttons */
+  }
+
+  .loginsignup-remember {
+    flex-direction: column; /* Stack remember me items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .loginsignup-remember label {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 5px; /* Add bottom margin for spacing */
+  }
+
+  .left-side img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .Continue-button, .continue2-button {
+    width: 100%; /* Full width for buttons on very small screens */
+    height: 35px; /* Adjust height for very small screens */
+  }
+}

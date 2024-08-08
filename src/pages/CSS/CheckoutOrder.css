@@ -737,4 +737,19 @@
   .product-details{
     height: 100px;
   }
-  
+  /* Example for responsive design */
+@media (max-width: 768px) {
+  .checkout-order {
+    padding: 10px;
+  }
+
+  .checkout-order .text-wrapper {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .checkout-order .container {
+    width: 100%;
+    padding: 10px;
+  }
+}

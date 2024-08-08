@@ -466,4 +466,236 @@ color: #565D6D;
     top: 8px;
     white-space: nowrap;
   }
- 
+ /* Additional container styles omitted for brevity */
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .payment-decline-top img {
+      width: 200px;
+      height: 150px;
+      padding: 50px 20px;
+     margin-left: 30%;
+  }
+
+  .payment-decline-top h1 {
+      width: auto;
+      margin-left: 30%;
+      font-size: 24px;
+  }
+
+  .payment-decline-top p {
+      font-size: 12px;
+      padding: 0 20px;
+  }
+
+  .container {
+      width: 90%;
+      left: 0;
+     
+      box-shadow: none;
+  }
+
+  .container .text-wrapper {
+      left: 16px;
+      top: 250px;
+      font-size: 12px;
+  }
+
+  .container .line {
+      width: calc(100% - 32px);
+      left: 16px;
+      top: 230px;
+  }
+
+  .container .tag {
+      left: 16px;
+      top: 270px;
+  }
+
+  .container .frame {
+      width: calc(100% - 32px);
+      left: 16px;
+  }
+
+  .container .text-wrapper-2,
+  .container .text-wrapper-3,
+  .container .text-wrapper-4,
+  .container .text-wrapper-5,
+  .container .text-wrapper-6,
+  .container .text-wrapper-7,
+  .container .text-wrapper-8,
+  .container .text-wrapper-9,
+  .container .text-wrapper-10,
+  
+  .container .text-wrapper-12,
+  .container .text-wrapper-13,
+  .container .text-wrapper-14,
+  .container .text-wrapper-15,
+  .container .text-wrapper-16,
+  .container .text-wrapper-17 {
+      font-size: 12px;
+  }
+  .container .text-wrapper-11{
+    font-size: 12px;
+    margin-left: 0%;
+  }
+  
+
+  .container .product-s-name,
+  .container .product-s-name-2 {
+      font-size: 14px;
+  }
+
+  .container .image-2,
+  .container .image-3 {
+      height: 100px;
+      
+  }
+  .container .image{
+    right: 80%;
+  }
+
+  .container .button,
+  .container .button-2 {
+      width: 140px;
+      height: 40px;
+  }
+}
+
+/* Adjustments for screens wider than 768px but smaller than 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .payment-decline-top img {
+      width: 260px;
+      height: 190px;
+      padding: 80px 300px;
+  }
+
+  .payment-decline-top h1 {
+      width: auto;
+      margin-left: 300px;
+      font-size: 28px;
+  }
+
+  .payment-decline-top p {
+      font-size: 13px;
+      padding: 0 40px;
+  }
+
+  .container {
+      width: 90%;
+      left: 5%;
+  }
+
+  .container .text-wrapper {
+      left: 20px;
+      top: 290px;
+      font-size: 13px;
+  }
+
+  .container .line {
+      width: calc(100% - 40px);
+      left: 20px;
+      top: 270px;
+  }
+
+  .container .tag {
+      left: 20px;
+      top: 320px;
+  }
+
+  .container .frame {
+      width: calc(100% - 40px);
+      left: 20px;
+  }
+}
+/* Media queries for screens 480px wide or smaller */
+@media (max-width: 480px) {
+  .payment-decline-top img {
+      width: 150px;
+      height: 100px;
+      padding: 40px 10px;
+  }
+
+  .payment-decline-top h1 {
+      width: auto;
+      
+      font-size: 20px;
+  }
+
+  .payment-decline-top p {
+      font-size: 12px;
+      padding: 0 10px;
+  }
+
+  .container {
+      width: 100%;
+      left: 0;
+      
+      box-shadow: none;
+      padding: 10px;
+  }
+
+  .container .text-wrapper {
+      left: 10px;
+      top: 220px;
+      font-size: 12px;
+  }
+
+  .container .line {
+      width: calc(100% - 20px);
+      left: 10px;
+      top: 200px;
+  }
+
+  .container .tag {
+      left: 10px;
+      top: 250px;
+  }
+
+  .container .frame {
+      width: calc(100% - 20px);
+      left: 10px;
+  }
+
+  .container .text-wrapper-2,
+  .container .text-wrapper-3,
+  .container .text-wrapper-4,
+  .container .text-wrapper-5,
+  .container .text-wrapper-6,
+  .container .text-wrapper-7,
+  .container .text-wrapper-8,
+  .container .text-wrapper-9,
+  .container .text-wrapper-10,
+  .container .text-wrapper-11,
+  .container .text-wrapper-12,
+  .container .text-wrapper-13,
+  .container .text-wrapper-14,
+  .container .text-wrapper-15,
+  .container .text-wrapper-16,
+  .container .text-wrapper-17 {
+      font-size: 12px;
+      margin-right: 20%;
+  }
+
+  .container .product-s-name,
+  .container .product-s-name-2 {
+      font-size: 14px;
+  }
+
+  .container .image-2,
+  .container .image-3 {
+      height: 100px;
+      width: auto;
+  }
+
+  .container .button,
+  .container .button-2 {
+      width: 140px;
+      height: 40px;
+      margin-right: 20%;
+  }
+
+  .container .text-wrapper-15 {
+      font-size: 10px;
+  }
+}

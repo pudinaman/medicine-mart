@@ -1,27 +1,36 @@
-.payment-accepted-top img{
-    width: 321px;
-    height: 295px;
-    padding: 100px 620px;
-    padding-bottom: 0;
+
+
+.payment-accepted-top img {
+  width: 321px;
+  height: 295px;
+  padding: 100px 620px;
+  padding-bottom: 0;
+  /* Add this to center the image horizontally on larger screens */
+  display: block;
+  margin: 0 auto;
 }
-.payment-accepted-top h1{
-    width: 528px;
-    height: 48px;
-    margin-left: 550px;
-    font-family: 'lexend'sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    color: #171A1f;
-    margin-bottom: 0;
-   
+
+.payment-accepted-top h1 {
+  width: 578px;
+  height: 48px;
+  margin-left: 550px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #171A1f;
+  margin-bottom: 0;
+  /* Center the h1 horizontally on larger screens */
+  text-align: center;
 }
+
 .payment-accepted-top p{
-    font-family: 'Manrope'sans-serif;
+font-family: 'Manrope'sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 22px;
 text-align: center;
 color: #565D6D;
+margin: auto;
 
 }
 .new-container {
@@ -30,7 +39,8 @@ color: #565D6D;
     height: 370px;
     position: relative;
     width: 560px;
-    left: 485px;
+    
+    margin: auto;
      /* Added border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
@@ -396,3 +406,72 @@ color: #565D6D;
     top: 466px;
     width: 164px;
   }
+  /* Responsive styles */
+  @media (max-width: 2400px) {
+    .payment-accepted-top img {
+        width: 30%;
+        height: auto;
+        padding: 50px 20px;
+    }
+  
+    .payment-accepted-top h1 {
+        width: calc(100% - 30px);
+        font-size: 24px;
+        margin-left: 2%;
+        text-align: center;
+    }
+    
+  }
+@media (max-width: 1200px) {
+  .payment-accepted-top img {
+      width: 40%;
+      height: auto;
+      padding: 50px 20px;
+  }
+
+  .payment-accepted-top h1 {
+      width: calc(100% - 30px);
+      font-size: 24px;
+      margin-left: 0;
+      text-align: center;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .payment-accepted-top img {
+      padding: 30px 10px;
+  }
+
+  .payment-accepted-top h1 {
+      font-size: 20px;
+      width: calc(100% - 20px);
+  }
+  .new-container {
+    width: 95%;
+    padding: 10px;
+    /* Height should be flexible for very small screens */
+   
+  
+}
+  
+}
+
+@media (max-width: 480px) {
+  .payment-accepted-top img {
+      padding: 20px 5px;
+  }
+
+  .payment-accepted-top h1 {
+      font-size: 18px;
+      width: calc(100% - 10px);
+    
+  }
+  .new-container {
+    width: 95%;
+    padding: 10px;
+    /* Height should be flexible for very small screens */
+   
+  
+}
+}

@@ -4,6 +4,9 @@ import deleteicon from '../assets/delete.png';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import loadings from '../assets/loading.jpg';
+import empty from '../assets/empty.jpg';
+
 
 const Cart = () => {
   const [order, setOrder] = useState(null);
@@ -49,11 +52,11 @@ const Cart = () => {
   };
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p><img src={loadings} alt="" /></p>;
   }
 
   if (!order || !order.products) {
-    return <p>No products found.</p>;
+    return <img src={empty} alt="" className='cart-empty' />;
   }
 
   const aggregateProducts = () => {

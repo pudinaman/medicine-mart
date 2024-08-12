@@ -4,12 +4,18 @@
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f5f5f5; /* Optional: Add background color for better visibility */
+    background-color: white; /* Optional: Add background color for better visibility */
     padding: 20px;
   }
   .abt-img{
     height: 600px;
     width: 100%;
+    
+  }
+  .abt-load{
+    height: 500px;
+    width: 500px;
+    border: 0px solid white;
   }
   .hero-text {
     position: absolute;
@@ -27,6 +33,7 @@
     left: 52%;
     transform: translate(-50%, -50%);
     font-size: 20px;
+    text-align: center;
     
     color: white;
     font-family: "Manrope",sans-serif;
@@ -98,6 +105,9 @@
   .about-list {
     max-width: 100%; /* Remove max-width restriction */
   }
+  .abt-load{
+
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -109,17 +119,36 @@
     height: auto; /* Ensure image maintains aspect ratio */
     max-width: 100%; /* Adjust image width */
   }
+  .abt-load{
+    width: 80%;
+    height:40% ;
+    margin-bottom: 60%;
+  }
+  .hero-text{
+    text-align: center;
+    margin: auto;
+    margin-left: 17px;
+    
+  }
+  .hero-text2{
+ 
+    text-align: center;
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .hero-text {
     font-size: 28px; /* Further reduce font size */
+    margin: auto;
+    height: 190px;
+    left: 52%;
    
   }
 
   .hero-text2 {
     font-size: 12px; /* Further reduce font size */
-    top: 45%; /* Adjust position */
+    top: 40%; /* Adjust position */
     text-align: center;
   }
 
@@ -132,7 +161,7 @@
 @media screen and (max-width: 480px) {
   .hero-text {
     font-size: 22px; /* Further reduce font size */
-    top: 22%; /* Adjust position */
+    top: 27%; /* Adjust position */
   }
 
   .hero-text2 {

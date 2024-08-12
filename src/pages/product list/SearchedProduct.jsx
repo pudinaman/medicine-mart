@@ -5,6 +5,7 @@ import Navbar from '../Navbar';
 import Filter from './Filter';
 import Footer from '../Footer';
 import ProductGrid from './ProductGrid';
+import loadings from '../../assets/loading.jpg'
 import './CSS/SearchedProduct.css';
 
 const SearchedProduct = () => {
@@ -84,11 +85,11 @@ const SearchedProduct = () => {
     };
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div><img src={loading} alt="" /></div>;
     }
 
     if (error) {
-        return <div>Error: {error.message}</div>;
+       return <div><img src={loadings} alt="" className='sp-load'/></div>;
     }
 
     return (

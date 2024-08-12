@@ -125,91 +125,64 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .filter-container {
-    width: 100%; /* Full width on smaller screens */
-    margin-left: 0; /* Remove left margin */
-    margin-top: 20px; /* Adjust top margin */
-  }
-
-  .filter-header {
-    flex-direction: column; /* Stack header items vertically */
-    align-items: flex-start; /* Align items to the start */
-  }
-
-  .filter-header h2 {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    margin-bottom: 10px; /* Adjust spacing */
-  }
-
-  .filter-clear-all {
-    font-size: 12px; /* Adjust font size for smaller screens */
-  }
-
-  .filter-salary {
-    flex-direction: column; /* Stack salary inputs vertically */
-  }
-
-  .filter-salary-input1,
-  .filter-salary-input2 {
-    width: 100%; /* Full width inputs */
-    margin-bottom: 10px; /* Adjust spacing */
+    width: 250px; /* Slightly smaller width for large tablets */
+    margin-left: 20px;
   }
 
   .filter-slider {
-    width: 100%; /* Full width slider */
-    margin-top: 20px; /* Adjust top margin */
-  }
-
-  .filter-section {
-    margin-bottom: 10px; /* Adjust spacing between sections */
-  }
-
-  .filter-title {
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
-
-  .filter-text1 {
-    margin-bottom: 20px; /* Adjust spacing */
-  }
-
-  .filter-dropdown.open {
-    max-height: 300px; /* Adjust dropdown height for smaller screens */
+    width: 180px; /* Adjust slider width */
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 900px) {
   .filter-container {
-    padding: 10px; /* Adjust padding for very small screens */
+    width: 200px; /* Reduce width for smaller tablets */
+    margin-left: 10px;
   }
 
-  .filter-header h2 {
-    font-size: 12px; /* Further adjust font size */
+  .filter-slider {
+    width: 160px; /* Further reduce slider width */
+    margin-top: 70px; /* Adjust margin */
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-container {
+    width: 140px; /* Full width on mobile */
+    margin-left: 0;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .filter-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .filter-clear-all {
-    font-size: 10px; /* Further adjust font size */
+    margin-top: 10px;
+  }
+
+  .filter-slider {
+    width: 100px; /* Full width on mobile */
+    margin-top: 80px; /* Adjust margin */
+    margin-left: 10px;
   }
 
   .filter-salary-input1,
   .filter-salary-input2 {
-    height: 28px; /* Adjust input height */
-    font-size: 14px; /* Adjust font size */
-  }
-
-  .filter-slider {
-    margin-top: 10px; /* Reduce top margin */
-  }
-
-  .filter-title {
-    font-size: 12px; /* Further adjust font size */
+    width: 100%; /* Full width inputs on mobile */
+    margin-bottom: 20px;
   }
 
   .filter-text1 {
-    margin-bottom: 10px; /* Reduce spacing */
+    margin-bottom: 30px;
   }
-  .css-cp2j25-MuiSlider-thumb  {
-    margin-top: 10px; /* Reduce top margin */
-    width:20px;
+
+  .filter-dropdown {
+    max-height: 300px; /* Adjust max-height for mobile */
   }
+  
 }

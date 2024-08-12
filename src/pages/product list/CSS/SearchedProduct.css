@@ -2,3 +2,10 @@
 .app-container {
     display: flex;
 }
+.sp-load{
+    height: 50%;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+    
+}

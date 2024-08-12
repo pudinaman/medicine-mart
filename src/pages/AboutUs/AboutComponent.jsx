@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './CSS/AboutComponent.css'; // Import your CSS file for component styling
 import hero_1 from "../../assets/medbg.jpg"
+import loading from '../../assets/loading.jpg'
 const AboutComponent = () => {
   const [aboutData, setAboutData] = useState([]);
 
@@ -56,7 +57,7 @@ const AboutComponent = () => {
           ))}
         </div>
       ) : (
-        <p>Loading...</p>
+        <img src={loading} alt="" className='abt-load'/>
       )}
     </div>
     </div>
